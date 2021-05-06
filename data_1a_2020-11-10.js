@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "2-",
-      "name": "客厅",
+      "name": "Living room",
       "levels": [
         {
           "tileSize": 256,
@@ -40,14 +40,14 @@ var APP_DATA = {
         {
           "yaw": -1.2613946107358966,
           "pitch": -0.7193363280122256,
-          "title": "2条网线",
+          "title": "2 Ethernet cables",
           "text": "Text"
         }
       ]
     },
     {
       "id": "0-",
-      "name": "玄关",
+      "name": "Entrance hall",
       "levels": [
         {
           "tileSize": 256,
@@ -103,44 +103,44 @@ var APP_DATA = {
         {
           "yaw": 2.558696863161794,
           "pitch": -1.2802220799400779,
-          "title": "空调冷凝剂管",
+          "title": "AC condensate pipe",
           "text": "Text"
         },
         {
           "yaw": 2.1209885599869063,
           "pitch": -0.16035583967488165,
-          "title": "网线",
+          "title": "Ethernet cable",
           "text": "Text"
         },
         {
           "yaw": -2.5678271004800663,
           "pitch": 0.17090730909598761,
-          "title": "200Amp 电管",
+          "title": "200Amp cable",
           "text": "Text"
         },
         {
           "yaw": 1.8048914825426348,
           "pitch": -0.032527356346012226,
-          "title": "洗衣机水管",
+          "title": "Washer pipe",
           "text": "Text"
         },
         {
           "yaw": 0.9547397502791366,
           "pitch": -1.3549467590551885,
-          "title": "二楼空调管，二，三楼电线",
+          "title": "AC condensate pipe for 2nd FL, BX cable for 2nd and 3rd FL",
           "text": "Text"
         },
         {
           "yaw": 1.838955533842367,
           "pitch": -0.9398989112761491,
-          "title": "厨房气排",
+          "title": "Kitchen vent",
           "text": "Text"
         }
       ]
     },
     {
       "id": "1-",
-      "name": "餐厅",
+      "name": "Dining room",
       "levels": [
         {
           "tileSize": 256,
@@ -184,26 +184,26 @@ var APP_DATA = {
         {
           "yaw": -1.2245481865238421,
           "pitch": -0.9782591608383058,
-          "title": "网线",
+          "title": "Ethernet cable",
           "text": "Text"
         },
         {
           "yaw": 2.7272718041829673,
           "pitch": -0.5267322953062834,
-          "title": "空调铜管",
+          "title": "AC condensate pipe",
           "text": "Text"
         },
         {
           "yaw": 3.043810841151469,
           "pitch": -0.4661830086404777,
-          "title": "厕所气排",
+          "title": "Bathroom vent",
           "text": "Text"
         }
       ]
     },
     {
       "id": "3-2",
-      "name": "厕所2",
+      "name": "Bathroom2",
       "levels": [
         {
           "tileSize": 256,
@@ -241,7 +241,7 @@ var APP_DATA = {
     },
     {
       "id": "4--1",
-      "name": "书房-1",
+      "name": "Guest room-1",
       "levels": [
         {
           "tileSize": 256,
@@ -291,26 +291,26 @@ var APP_DATA = {
         {
           "yaw": -0.2618299317736543,
           "pitch": -0.24728542332355552,
-          "title": "下水管",
+          "title": "Drain",
           "text": "Text"
         },
         {
           "yaw": -0.1057702436981156,
           "pitch": -0.004287496218891462,
-          "title": "煤气管",
+          "title": "Gas pipe",
           "text": "Text"
         },
         {
           "yaw": -0.02684238838465447,
           "pitch": -0.19843796314118833,
-          "title": "气排",
+          "title": "Air vent",
           "text": "Text"
         }
       ]
     },
     {
       "id": "5--2",
-      "name": "书房-2",
+      "name": "Guest room-2",
       "levels": [
         {
           "tileSize": 256,
@@ -372,7 +372,7 @@ var APP_DATA = {
     },
     {
       "id": "6--2",
-      "name": "主卧-2",
+      "name": "Master bedroom-2",
       "levels": [
         {
           "tileSize": 256,
@@ -416,26 +416,26 @@ var APP_DATA = {
         {
           "yaw": 3.0675167236835907,
           "pitch": 0.011461845959434669,
-          "title": "空调洞",
+          "title": "AC hole",
           "text": "Text"
         },
         {
           "yaw": 2.9951115764339526,
           "pitch": 0.5391941168831575,
-          "title": "空调洞",
+          "title": "AC hole",
           "text": "Text"
         },
         {
           "yaw": -1.8887958555581488,
           "pitch": 0.7210193567347485,
-          "title": "空调洞",
+          "title": "AC hole",
           "text": "Text"
         }
       ]
     },
     {
       "id": "7--1",
-      "name": "主卧-1",
+      "name": "Master bedroom-1",
       "levels": [
         {
           "tileSize": 256,
@@ -491,7 +491,7 @@ var APP_DATA = {
     },
     {
       "id": "8-aaron",
-      "name": "aaron卧室",
+      "name": "Boy's room",
       "levels": [
         {
           "tileSize": 256,
@@ -541,7 +541,7 @@ var APP_DATA = {
     },
     {
       "id": "9-mia-1",
-      "name": "mia卧室-1",
+      "name": "Girl's room-1",
       "levels": [
         {
           "tileSize": 256,
@@ -597,7 +597,7 @@ var APP_DATA = {
     },
     {
       "id": "10-mia-2",
-      "name": "mia卧室-2",
+      "name": "Girl's room-2",
       "levels": [
         {
           "tileSize": 256,
@@ -653,7 +653,7 @@ var APP_DATA = {
     },
     {
       "id": "11--2",
-      "name": "走廊-2",
+      "name": "Hallway-2",
       "levels": [
         {
           "tileSize": 256,
@@ -715,7 +715,7 @@ var APP_DATA = {
     },
     {
       "id": "12--1",
-      "name": "走廊-1",
+      "name": "Hallway-1",
       "levels": [
         {
           "tileSize": 256,
@@ -777,7 +777,7 @@ var APP_DATA = {
     },
     {
       "id": "13--2",
-      "name": "厨房-2",
+      "name": "Kitchen-2",
       "levels": [
         {
           "tileSize": 256,
@@ -833,26 +833,26 @@ var APP_DATA = {
         {
           "yaw": -0.8577230736661257,
           "pitch": 0.10862807941786734,
-          "title": "热水管",
+          "title": "Hot water",
           "text": "Text"
         },
         {
           "yaw": -0.7709708331709599,
           "pitch": -0.2700433668327413,
-          "title": "厨房气排",
+          "title": "Air vent",
           "text": "Text"
         },
         {
           "yaw": -0.6715747066273234,
           "pitch": 0,
-          "title": "冷水管",
+          "title": "Cool water",
           "text": "Text"
         }
       ]
     },
     {
       "id": "14--1",
-      "name": "厨房-1",
+      "name": "Kitchen-1",
       "levels": [
         {
           "tileSize": 256,
@@ -908,20 +908,20 @@ var APP_DATA = {
         {
           "yaw": 0.2077370707894861,
           "pitch": 0.19049094697111713,
-          "title": "200AMP电管",
+          "title": "200Amp cable",
           "text": "Text"
         },
         {
           "yaw": -0.12287859882627217,
           "pitch": 0.3283794723185327,
-          "title": "二三楼100AMP电线",
+          "title": "100Amp BX cable for 2nd and 3rd FL",
           "text": "Text"
         }
       ]
     },
     {
       "id": "15-1",
-      "name": "厕所1",
+      "name": "Bathroom1",
       "levels": [
         {
           "tileSize": 256,

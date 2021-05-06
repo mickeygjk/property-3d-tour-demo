@@ -2,7 +2,7 @@ var APP_DATA = {
   scenes: [
     {
       id: "12--1",
-      name: "客厅-1",
+      name: "Living room",
       levels: [
         {
           tileSize: 256,
@@ -40,7 +40,7 @@ var APP_DATA = {
     },
     {
       id: "13-",
-      name: "客厅走廊",
+      name: "Living room hallway",
       levels: [
         {
           tileSize: 256,
@@ -84,7 +84,7 @@ var APP_DATA = {
     },
     {
       id: "0-1",
-      name: "厕所1",
+      name: "Bathroom1",
       levels: [
         {
           tileSize: 256,
@@ -122,7 +122,7 @@ var APP_DATA = {
     },
     {
       id: "1-2",
-      name: "厕所2",
+      name: "Bathroom2",
       levels: [
         {
           tileSize: 256,
@@ -160,7 +160,7 @@ var APP_DATA = {
     },
     {
       id: "2-1-",
-      name: "卧室1 （墙拆，并入客厅）",
+      name: "Bedroom1 (converting to open dining room)",
       levels: [
         {
           tileSize: 256,
@@ -198,14 +198,14 @@ var APP_DATA = {
         {
           yaw: -1.5619299153255035,
           pitch: -0.23210957676281296,
-          title: "墙拆",
+          title: "Tear down",
           text: "Text",
         },
       ],
     },
     {
       id: "3-2",
-      name: "卧室2",
+      name: "Bedroom2",
       levels: [
         {
           tileSize: 256,
@@ -250,7 +250,7 @@ var APP_DATA = {
     },
     {
       id: "4-",
-      name: "主卧",
+      name: "Master bedroom",
       levels: [
         {
           tileSize: 256,
@@ -288,7 +288,7 @@ var APP_DATA = {
     },
     {
       id: "5-2-",
-      name: "厨房2 （改成卧室）",
+      name: "Kitchen2 (converting to guest room)",
       levels: [
         {
           tileSize: 256,
@@ -326,14 +326,14 @@ var APP_DATA = {
         {
           yaw: 1.654781096857577,
           pitch: 0.22340273289883683,
-          title: "古董柜",
+          title: "Antique stand to keep",
           text: "",
         },
       ],
     },
     {
       id: "6-",
-      name: "餐厅（改成厨房）",
+      name: "Dining room (converting to kitchen)",
       levels: [
         {
           tileSize: 256,
@@ -377,14 +377,14 @@ var APP_DATA = {
         {
           yaw: -0.8789722594154092,
           pitch: -0.0376333302066314,
-          title: "古董柜",
+          title: "Antique stand to keep",
           text: "Text",
         },
       ],
     },
     {
       id: "7-",
-      name: "玄关",
+      name: "Entrance hall",
       levels: [
         {
           tileSize: 256,
@@ -434,7 +434,7 @@ var APP_DATA = {
     },
     {
       id: "8-1-",
-      name: "走廊1 （墙拆，并入客厅）",
+      name: "Hallway1 (merging into dining room)",
       levels: [
         {
           tileSize: 256,
@@ -496,14 +496,14 @@ var APP_DATA = {
         {
           yaw: 0.14873643397736735,
           pitch: -0.0009883375431147812,
-          title: "墙拆",
+          title: "Tear down",
           text: "Text",
         },
       ],
     },
     {
       id: "9-2-2",
-      name: "走廊2-2",
+      name: "Hallway2-2",
       levels: [
         {
           tileSize: 256,
@@ -553,14 +553,14 @@ var APP_DATA = {
         {
           yaw: -1.7596047032012017,
           pitch: 0.10299432030671163,
-          title: "洗衣烘干",
+          title: "Washer/Dryer",
           text: "Text",
         },
       ],
     },
     {
       id: "10-2-1",
-      name: "走廊2-1",
+      name: "Hallway2-1",
       levels: [
         {
           tileSize: 256,
@@ -616,7 +616,7 @@ var APP_DATA = {
     },
     {
       id: "11-",
-      name: "厨房（改成卧室）",
+      name: "Kitchen (converting to guest room)",
       levels: [
         {
           tileSize: 256,
@@ -659,11 +659,11 @@ var APP_DATA = {
       infoHotspots: [],
     },
   ],
-  name: "218_cumberland_existing",
+  name: "Existing",
   settings: {
     mouseViewMode: "drag",
     autorotateEnabled: true,
-    fullscreenButton: true,
-    viewControlButtons: true,
+    fullscreenButton: false,
+    viewControlButtons: false,
   },
 };

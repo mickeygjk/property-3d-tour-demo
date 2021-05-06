@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "9-1",
-      "name": "客厅1",
+      "name": "Living room",
       "levels": [
         {
           "tileSize": 256,
@@ -40,7 +40,7 @@ var APP_DATA = {
     },
     {
       "id": "8-2",
-      "name": "客厅2",
+      "name": "Dining room",
       "levels": [
         {
           "tileSize": 256,
@@ -84,7 +84,7 @@ var APP_DATA = {
     },
     {
       "id": "0-arron",
-      "name": "arron卧室",
+      "name": "Boy's room",
       "levels": [
         {
           "tileSize": 256,
@@ -128,7 +128,7 @@ var APP_DATA = {
     },
     {
       "id": "1-mia",
-      "name": "mia卧室",
+      "name": "Girl's room",
       "levels": [
         {
           "tileSize": 256,
@@ -178,7 +178,7 @@ var APP_DATA = {
     },
     {
       "id": "2-",
-      "name": "主卧",
+      "name": "Master bedroom",
       "levels": [
         {
           "tileSize": 256,
@@ -228,7 +228,7 @@ var APP_DATA = {
     },
     {
       "id": "3-2",
-      "name": "厕所2",
+      "name": "Bathroom2",
       "levels": [
         {
           "tileSize": 256,
@@ -266,7 +266,7 @@ var APP_DATA = {
     },
     {
       "id": "4-",
-      "name": "走廊",
+      "name": "Hallway",
       "levels": [
         {
           "tileSize": 256,
@@ -322,7 +322,7 @@ var APP_DATA = {
     },
     {
       "id": "5-",
-      "name": "厨房",
+      "name": "Kitchen",
       "levels": [
         {
           "tileSize": 256,
@@ -372,7 +372,7 @@ var APP_DATA = {
     },
     {
       "id": "6-1",
-      "name": "厕所1",
+      "name": "Bathroom1",
       "levels": [
         {
           "tileSize": 256,
@@ -416,7 +416,7 @@ var APP_DATA = {
     },
     {
       "id": "7-",
-      "name": "玄关",
+      "name": "Entrance hall",
       "levels": [
         {
           "tileSize": 256,
@@ -472,7 +472,7 @@ var APP_DATA = {
       ]
     },
   ],
-  "name": "218_cumberland_1_2020-11-04",
+  "name": "1a_2020-11-04",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,

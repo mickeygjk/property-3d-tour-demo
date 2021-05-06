@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "16-",
-      "name": "客厅",
+      "name": "Living room",
       "levels": [
         {
           "tileSize": 256,
@@ -40,7 +40,7 @@ var APP_DATA = {
     },
     {
       "id": "0-mia",
-      "name": "mia卧室",
+      "name": "Girl's room",
       "levels": [
         {
           "tileSize": 256,
@@ -78,7 +78,7 @@ var APP_DATA = {
     },
     {
       "id": "1-",
-      "name": "主卧",
+      "name": "Master bedroom",
       "levels": [
         {
           "tileSize": 256,
@@ -116,7 +116,7 @@ var APP_DATA = {
     },
     {
       "id": "2-arron",
-      "name": "arron卧室",
+      "name": "Boy's room",
       "levels": [
         {
           "tileSize": 256,
@@ -154,7 +154,7 @@ var APP_DATA = {
     },
     {
       "id": "3-",
-      "name": "储物柜",
+      "name": "Closet",
       "levels": [
         {
           "tileSize": 256,
@@ -192,7 +192,7 @@ var APP_DATA = {
     },
     {
       "id": "4-2",
-      "name": "走廊2",
+      "name": "Hallway2",
       "levels": [
         {
           "tileSize": 256,
@@ -254,7 +254,7 @@ var APP_DATA = {
     },
     {
       "id": "5-2",
-      "name": "厕所2",
+      "name": "Bathroom2",
       "levels": [
         {
           "tileSize": 256,
@@ -292,7 +292,7 @@ var APP_DATA = {
     },
     {
       "id": "6-1",
-      "name": "走廊1",
+      "name": "Hallway1",
       "levels": [
         {
           "tileSize": 256,
@@ -349,7 +349,7 @@ var APP_DATA = {
     },
     {
       "id": "7-",
-      "name": "大门",
+      "name": "Building gate",
       "levels": [
         {
           "tileSize": 256,
@@ -387,7 +387,7 @@ var APP_DATA = {
     },
     {
       "id": "8--2",
-      "name": "书房-2",
+      "name": "Guest room-2",
       "levels": [
         {
           "tileSize": 256,
@@ -425,7 +425,7 @@ var APP_DATA = {
     },
     {
       "id": "9--1",
-      "name": "书房-1",
+      "name": "Guest room-1",
       "levels": [
         {
           "tileSize": 256,
@@ -469,7 +469,7 @@ var APP_DATA = {
     },
     {
       "id": "10-",
-      "name": "厨房",
+      "name": "Kitchen",
       "levels": [
         {
           "tileSize": 256,
@@ -525,7 +525,7 @@ var APP_DATA = {
     },
     {
       "id": "11-",
-      "name": "洗衣柜",
+      "name": "Washer/Dryer",
       "levels": [
         {
           "tileSize": 256,
@@ -563,7 +563,7 @@ var APP_DATA = {
     },
     {
       "id": "12-1",
-      "name": "厕所1门口",
+      "name": "Bathroom1 doorway",
       "levels": [
         {
           "tileSize": 256,
@@ -625,7 +625,7 @@ var APP_DATA = {
     },
     {
       "id": "13-",
-      "name": "玄关",
+      "name": "Entrance hall",
       "levels": [
         {
           "tileSize": 256,
@@ -687,7 +687,7 @@ var APP_DATA = {
     },
     {
       "id": "14-1",
-      "name": "厕所1",
+      "name": "Bathroom1",
       "levels": [
         {
           "tileSize": 256,
@@ -725,7 +725,7 @@ var APP_DATA = {
     },
     {
       "id": "15-",
-      "name": "餐厅",
+      "name": "Dining room",
       "levels": [
         {
           "tileSize": 256,
