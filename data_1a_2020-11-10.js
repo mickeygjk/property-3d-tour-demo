@@ -115,7 +115,7 @@ var APP_DATA = {
         {
           "yaw": -2.5678271004800663,
           "pitch": 0.17090730909598761,
-          "title": "200Amp cable",
+          "title": "200Amp conduit",
           "text": "Text"
         },
         {

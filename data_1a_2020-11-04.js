@@ -466,7 +466,7 @@ var APP_DATA = {
         {
           "yaw": 1.9126093501620751,
           "pitch": 0.5732032536939808,
-          "title": "洗衣烘干机",
+          "title": "Washer/Dryer",
           "text": "Text"
         }
       ]

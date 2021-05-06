@@ -160,7 +160,7 @@ var APP_DATA = {
     },
     {
       id: "2-1-",
-      name: "Bedroom1 (converting to open dining room)",
+      name: "Bedroom1 (converting to dining room)",
       levels: [
         {
           tileSize: 256,
@@ -243,7 +243,7 @@ var APP_DATA = {
         {
           yaw: -3.0492989906968617,
           pitch: 0.021290837808855656,
-          title: "Title",
+          title: "Closet to keep",
           text: "Text",
         },
       ],
@@ -288,7 +288,7 @@ var APP_DATA = {
     },
     {
       id: "5-2-",
-      name: "Kitchen2 (converting to guest room)",
+      name: "Kitchen2 (converting to bedroom)",
       levels: [
         {
           tileSize: 256,
@@ -553,7 +553,7 @@ var APP_DATA = {
         {
           yaw: -1.7596047032012017,
           pitch: 0.10299432030671163,
-          title: "Washer/Dryer",
+          title: "Closet",
           text: "Text",
         },
       ],
