@@ -1,88 +1,178 @@
+---
+layout: null
+---
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Renovation 3D logs demo</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site Log — 3D renovation tours in Brooklyn</title>
+    <meta
+      name="description"
+      content="Walk a Brooklyn renovation in 3D—from gut demolition to finish. Interactive Marzipano tours that keep owners, architects, and builders aligned."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=Figtree:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="landing.css" />
   </head>
-  <style>
-    table {
-      border-spacing: 1em 0.5em;
-    }
-    th,
-    td {
-      font-size: 30px;
-    }
-  </style>
   <body>
-    <h1>Click links below for renovation 3D tours</h1>
-    <table id="tours_table">
-      <th>Date</th>
-      <th>Location</th>
-      <th>Progress</th>
-    </table>
-  </body>
-  <script src="vendor/jquery-3.5.1.min.js"></script>
-  <script>
-    tours = [
-      {
-        date: "2020-10-12",
-        location: "Apt 1",
-        link: "tour_1a_2020-10-12.html",
-        description: "Before renovation",
-      },
-      {
-        date: "2020-10-28",
-        location: "Apt 1",
-        link: "tour_1a_2020-10-28.html",
-        description: "Demolition",
-      },
-      {
-        date: "2020-11-04",
-        location: "Apt 1",
-        link: "tour_1a_2020-11-04.html",
-        description: "Plumbing; Electric panel; Homasote+plywood subfloor",
-      },
-      {
-        date: "2020-11-10",
-        location: "Apt 1",
-        link: "tour_1a_2020-11-10.html",
-        description: "Electric wiring; AC pipes;",
-      },
-      {
-        date: "2020-11-17",
-        location: "Apt 1",
-        link: "tour_1a_2020-11-17.html",
-        description: "Acoustic panel + drywall; Gas pipe",
-      },
-      {
-        date: "2020-12-07",
-        location: "Apt 1",
-        link: "tour_1a_2020-12-07.html",
-        description: "Bathrooms",
-      },
-      {
-        date: "2020-12-28",
-        location: "Apt 1",
-        link: "tour_1a_2020-12-28.html",
-        description: "Floor; Appliances; Door frames/handles; AC; Stairs;",
-      },
-    ]; // End of the tours array;
-    $(document).ready(() => {
-      tours.forEach((tour) => {
-        var $tr = $("<tr>");
-        $tr.append($("<td>").append($("<span>").html(tour.date)));
-        $tr.append($("<td>").append($("<span>").html(tour.location)));
-        $tr.append(
-          $("<td>").append(
-            $("<a>")
-              .attr("href", tour.link)
-              .attr("target", "_blank")
-              .html(tour.description)
-          )
-        );
+    <a class="skip-link" href="#timeline">Skip to tour timeline</a>
 
-        $("#tours_table").append($tr);
+    <header class="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img
+          src="tiles/1a_2020-11-10/15-1/1/f/0/0.jpg"
+          alt=""
+          width="512"
+          height="512"
+          fetchpriority="high"
+        />
+        <div class="hero__shade"></div>
+      </div>
+      <div class="hero__content">
+        <p class="brand">Site Log</p>
+        <h1>Walk every stage of the reno.</h1>
+        <p class="hero__lede">
+          Interactive 3D tours that document a Brooklyn apartment from gut to
+          finish—so owners, architects, and builders stay aligned.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn--primary" href="tour_1a_2020-12-28.html"
+            >Enter latest tour</a
+          >
+          <a class="btn btn--ghost" href="#timeline">See the timeline</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="timeline" aria-labelledby="timeline-title">
+        <p class="section__eyebrow">218 Cumberland · Apt 1</p>
+        <h2 class="section__title" id="timeline-title">The renovation, in order</h2>
+        <p class="section__copy">
+          Seven capture days across ten weeks. Open any stage and walk the space
+          as it stood that day.
+        </p>
+        <ol class="timeline" id="tours"></ol>
+      </section>
+
+      <section class="section contact" aria-labelledby="contact-title">
+        <p class="section__eyebrow">Brooklyn projects</p>
+        <h2 class="section__title" id="contact-title">Document your next reno</h2>
+        <p class="section__copy">
+          Before, mid-build, and after scans with shareable links for remote
+          owners and the jobsite team.
+        </p>
+        <a class="btn btn--solid" href="mailto:mickeygjk@gmail.com"
+          >Email about a project</a
+        >
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Site Log · 3D renovation documentation · Brooklyn, NY</p>
+    </footer>
+
+    <script>
+      const tours = [
+        {
+          date: "2020-10-12",
+          label: "Before renovation",
+          detail: "Existing layout — living room, kitchens, bedrooms as found.",
+          link: "tour_1a_2020-10-12.html",
+          thumb: "tiles/218_cumberland_1a_2020-10-12/12--1/1/f/0/0.jpg",
+        },
+        {
+          date: "2020-10-28",
+          label: "Demolition",
+          detail: "Gut phase — studs, brick, and open structure exposed.",
+          link: "tour_1a_2020-10-28.html",
+          thumb: "tiles/218_cumberland_1a_2020-10-28/0-/1/f/0/0.jpg",
+        },
+        {
+          date: "2020-11-04",
+          label: "Rough systems",
+          detail: "Plumbing, electric panel, homasote and plywood subfloor.",
+          link: "tour_1a_2020-11-04.html",
+          thumb: "tiles/218_cumberland_1a_2020-11-04/0-arron/1/f/0/0.jpg",
+        },
+        {
+          date: "2020-11-10",
+          label: "Wiring & AC",
+          detail: "Electric runs and AC piping before walls close up.",
+          link: "tour_1a_2020-11-10.html",
+          thumb: "tiles/1a_2020-11-10/15-1/1/f/0/0.jpg",
+        },
+        {
+          date: "2020-11-17",
+          label: "Drywall",
+          detail: "Acoustic panel and drywall; gas pipe in place.",
+          link: "tour_1a_2020-11-17.html",
+          thumb: "tiles/1a_2020-11-17/0-mia/1/f/0/0.jpg",
+        },
+        {
+          date: "2020-12-07",
+          label: "Bathrooms",
+          detail: "Finish work underway in the wet rooms.",
+          link: "tour_1a_2020-12-07.html",
+          thumb: "tiles/1a_2020-12-07/3-aaron/1/f/0/0.jpg",
+        },
+        {
+          date: "2020-12-28",
+          label: "Nearly finished",
+          detail: "Floors, appliances, doors, AC, and stairs installed.",
+          link: "tour_1a_2020-12-28.html",
+          thumb: "tiles/1a_2020-12-28/0-/1/f/0/0.jpg",
+        },
+      ];
+
+      const formatDate = (iso) =>
+        new Date(iso + "T12:00:00").toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+          year: "numeric",
+        });
+
+      const list = document.getElementById("tours");
+
+      tours.forEach((tour, index) => {
+        const item = document.createElement("li");
+        const anchor = document.createElement("a");
+        anchor.className = "tour-link";
+        anchor.href = tour.link;
+        anchor.style.transitionDelay = `${Math.min(index * 60, 360)}ms`;
+        anchor.innerHTML = `
+          <div class="tour-link__thumb">
+            <img src="${tour.thumb}" alt="" width="240" height="168" loading="lazy" />
+          </div>
+          <div class="tour-link__meta">
+            <p class="tour-link__date">${formatDate(tour.date)}</p>
+            <h3 class="tour-link__title">${tour.label}</h3>
+            <p class="tour-link__detail">${tour.detail}</p>
+          </div>
+          <p class="tour-link__go">Open tour <span aria-hidden="true">→</span></p>
+        `;
+        item.appendChild(anchor);
+        list.appendChild(item);
       });
-    });
-  </script>
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2, rootMargin: "0px 0px -8% 0px" }
+      );
+
+      document.querySelectorAll(".tour-link").forEach((el) => observer.observe(el));
+    </script>
+  </body>
 </html>
