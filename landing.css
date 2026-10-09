@@ -412,3 +412,10 @@ a {
     transform: none;
   }
 }
+
+.footer a {
+  color: var(--accent-ink);
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}

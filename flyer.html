@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site Log flyer — print with QR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=Figtree:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="flyer.css" />
+  </head>
+  <body>
+    <div class="screen-toolbar">
+      <span>US Letter flyer · QR opens the live Site Log tours</span>
+      <div class="screen-toolbar__actions">
+        <a class="link-btn" href="index.html">Back to site</a>
+        <button type="button" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+
+    <article class="flyer" aria-label="Site Log handout flyer">
+      <header class="flyer__hero">
+        <img
+          src="tiles/1a_2020-11-10/15-1/1/f/0/0.jpg"
+          alt=""
+          width="512"
+          height="512"
+        />
+        <div class="flyer__hero-shade" aria-hidden="true"></div>
+        <div class="flyer__hero-copy">
+          <p class="brand">Site Log</p>
+          <h1>Scan to walk the reno in 3D.</h1>
+          <p>
+            See every stage of a Brooklyn renovation—from gut demolition to
+            finish—on your phone.
+          </p>
+        </div>
+      </header>
+
+      <div class="flyer__body">
+        <section class="flyer__pitch">
+          <h2>Built for owners, architects &amp; GCs</h2>
+          <ul>
+            <li>
+              <strong>Before / mid / after</strong>
+              Capture days stay shareable so remote stakeholders stay aligned.
+            </li>
+            <li>
+              <strong>Job-site ready</strong>
+              Open any stage and walk the space as it stood that day.
+            </li>
+            <li>
+              <strong>Brooklyn projects</strong>
+              Demo: 218 Cumberland Apt 1 — seven scans across ten weeks.
+            </li>
+          </ul>
+        </section>
+
+        <aside class="flyer__scan">
+          <p class="flyer__scan-label">Point camera here</p>
+          <div class="qr">
+            <img
+              src="img/qr-site-log.svg"
+              alt="QR code linking to Site Log 3D renovation tours"
+              width="540"
+              height="540"
+            />
+          </div>
+          <p class="flyer__scan-cta">Open the tours</p>
+          <p class="flyer__scan-url">
+            mickeygjk.github.io/property-3d-tour-demo
+          </p>
+        </aside>
+
+        <footer class="flyer__footer">
+          <span><strong>Site Log</strong> · 3D renovation documentation</span>
+          <span>mickeygjk@gmail.com</span>
+        </footer>
+      </div>
+    </article>
+  </body>
+</html>
