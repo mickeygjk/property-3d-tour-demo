@@ -76,18 +76,29 @@ a {
   z-index: 0;
 }
 
-.hero__media picture {
+.hero__media .hero__video,
+.hero__media .hero__photo {
   position: absolute;
   inset: 0;
-}
-
-.hero__media img,
-.hero__photo {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
   object-position: 50% 45%;
+}
+
+.hero__photo--static {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__video {
+    display: none;
+  }
+
+  .hero__photo--static {
+    display: block;
+  }
 }
 
 .hero__shade {
