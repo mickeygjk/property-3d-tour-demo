@@ -97,14 +97,24 @@ body {
 
 .flyer__hero {
   position: relative;
+  display: grid;
+  grid-template: 1fr / 1fr;
   overflow: hidden;
   background: #0f1714;
   color: #f4f7f5;
+  /* Keep photo + dark fills when browsers save/print PDF */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
-.flyer__hero img {
-  position: absolute;
-  inset: 0;
+.flyer__hero-photo,
+.flyer__hero-shade,
+.flyer__hero-copy {
+  grid-area: 1 / 1;
+}
+
+.flyer__hero-photo {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -112,17 +122,15 @@ body {
 }
 
 .flyer__hero-shade {
-  position: absolute;
-  inset: 0;
   background:
     linear-gradient(180deg, rgba(10, 18, 16, 0.2) 0%, rgba(10, 18, 16, 0.55) 55%, rgba(10, 18, 16, 0.88) 100%),
     linear-gradient(90deg, rgba(10, 18, 16, 0.55) 0%, rgba(10, 18, 16, 0.15) 60%, rgba(10, 18, 16, 0.35) 100%);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .flyer__hero-copy {
-  position: relative;
   z-index: 1;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -284,6 +292,17 @@ body {
 }
 
 @media print {
+  html,
+  body,
+  .flyer,
+  .flyer__hero,
+  .flyer__hero-shade,
+  .flyer__body,
+  .flyer__scan {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   body {
     background: #fff;
     padding: 0;
@@ -300,5 +319,17 @@ body {
     width: 8.5in;
     height: 11in;
     page-break-after: avoid;
+    break-inside: avoid;
+  }
+
+  .flyer__hero {
+    /* Avoid absolute stacking quirks in some PDF engines */
+    min-height: 4.6in;
+  }
+
+  .flyer__hero-photo {
+    width: 100%;
+    height: 4.6in;
+    max-height: none;
   }
 }
