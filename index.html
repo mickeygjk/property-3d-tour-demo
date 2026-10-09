@@ -21,13 +21,20 @@
 
     <header class="hero">
       <div class="hero__media" aria-hidden="true">
-        <img
-          src="img/landing-hero.jpg"
-          alt=""
-          width="1920"
-          height="1080"
-          fetchpriority="high"
-        />
+        <picture>
+          <source
+            srcset="img/landing-hero.jpg"
+            media="(prefers-reduced-motion: reduce)"
+          />
+          <img
+            class="hero__photo"
+            src="img/landing-hero-progress.gif"
+            alt=""
+            width="960"
+            height="540"
+            fetchpriority="high"
+          />
+        </picture>
         <div class="hero__shade"></div>
       </div>
       <div class="hero__content">
