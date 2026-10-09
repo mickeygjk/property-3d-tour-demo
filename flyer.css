@@ -277,6 +277,12 @@ body {
   color: var(--accent-ink);
 }
 
+.flyer__footer a {
+  color: var(--accent-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
 @media print {
   body {
     background: #fff;

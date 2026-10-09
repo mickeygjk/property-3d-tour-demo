@@ -413,6 +413,11 @@ a {
   }
 }
 
+.contact__email {
+  margin-bottom: 1rem;
+}
+
+.contact__email a,
 .footer a {
   color: var(--accent-ink);
   font-weight: 650;
