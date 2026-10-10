@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=Figtree:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="landing.css?v=hero2" />
   </head>
   <body>
     <a class="skip-link" href="#timeline">Skip to tour timeline</a>
@@ -27,15 +27,20 @@
           muted
           loop
           playsinline
-          poster="img/landing-hero.jpg"
+          webkit-playsinline
+          preload="auto"
+          poster="img/landing-hero.jpg?v=hero2"
           width="1280"
           height="720"
         >
-          <source src="img/landing-hero-progress.mp4" type="video/mp4" />
+          <source
+            src="img/landing-hero-progress.mp4?v=hero2"
+            type="video/mp4"
+          />
         </video>
         <img
           class="hero__photo hero__photo--static"
-          src="img/landing-hero.jpg"
+          src="img/landing-hero.jpg?v=hero2"
           alt=""
           width="1280"
           height="720"
@@ -95,6 +100,33 @@
     </footer>
 
     <script>
+      (function ensureHeroVideo() {
+        const video = document.querySelector(".hero__video");
+        if (!video) return;
+        video.muted = true;
+        video.defaultMuted = true;
+        video.setAttribute("muted", "");
+        const tryPlay = () => {
+          const play = video.play();
+          if (play && typeof play.then === "function") {
+            play
+              .then(() => {
+                video.closest(".hero")?.classList.add("hero--video-ok");
+              })
+              .catch(() => {});
+          } else if (!video.paused) {
+            video.closest(".hero")?.classList.add("hero--video-ok");
+          }
+        };
+        if (video.readyState >= 2) tryPlay();
+        else video.addEventListener("canplay", tryPlay, { once: true });
+        video.addEventListener("loadeddata", tryPlay, { once: true });
+        document.addEventListener("visibilitychange", () => {
+          if (!document.hidden && video.paused) tryPlay();
+        });
+        window.addEventListener("pageshow", tryPlay);
+      })();
+
       const tours = [
         {
           date: "2020-10-12",
