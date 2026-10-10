@@ -21,11 +21,24 @@
 
     <header class="hero">
       <div class="hero__media" aria-hidden="true">
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="img/landing-hero.jpg"
+          width="1280"
+          height="720"
+        >
+          <source src="img/landing-hero-progress.mp4" type="video/mp4" />
+        </video>
         <img
-          src="tiles/1a_2020-11-10/15-1/1/f/0/0.jpg"
+          class="hero__photo hero__photo--static"
+          src="img/landing-hero.jpg"
           alt=""
-          width="512"
-          height="512"
+          width="1280"
+          height="720"
           fetchpriority="high"
         />
         <div class="hero__shade"></div>
