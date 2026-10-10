@@ -91,14 +91,24 @@ a {
   display: none;
 }
 
+/* Keep the video visible by default. Only swap to the still when the user
+   prefers reduced motion AND we could not start playback. */
 @media (prefers-reduced-motion: reduce) {
-  .hero__video {
+  .hero:not(.hero--video-ok) .hero__video {
     display: none;
   }
 
-  .hero__photo--static {
+  .hero:not(.hero--video-ok) .hero__photo--static {
     display: block;
   }
+}
+
+.hero--video-ok .hero__video {
+  display: block;
+}
+
+.hero--video-ok .hero__photo--static {
+  display: none;
 }
 
 .hero__shade {
